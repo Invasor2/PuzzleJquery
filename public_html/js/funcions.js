@@ -106,10 +106,9 @@ $(document).ready(function () {
 
                     $('#board').css({position: 'absolute', width: boardSize, height: boardSize, border: '1px solid gray'});
 
-                    // Populate the game board's HTML container with 15 squares
+                    // Llenamos el tablero con 16 piezas(divs) 
                     for (var i = 0; i < 16; i++) {
-                        // A dirty way to create an arbitrary DIV and append it into HTML dynamically
-                        // Notice each square uses the same image. It just uses a different x/y offset for each square
+                        // En cada div tendrémos la misma imagen, pero se mostrará un sector diferente dependiendo de su hubicación en el tablero.
                         if (i !== 0)//la primera pieza debe aparecer seleccionada
                             $('#board').append("<div class=can_be_selected style='left: " + ((i % 4) * square_size) + "px; top: " + Math.floor(i / 4) * square_size + "px; width: " + square_size + "px; height: " + square_size + "px; background-position: " + (-(i % 4) * square_size) + "px " + -Math.floor(i / 4) * square_size + "px '></div>");
                         else//las demás piezas no aparecen seleccionados
