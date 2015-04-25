@@ -10,7 +10,8 @@ body{
 
 
 #contenidor{
-    padding-left: 10%;
+    padding-left: 5%;
+    widows: 1000px;
 }
 
 #game_object, aside{
@@ -23,6 +24,7 @@ body{
 }
 
 aside{
+    width: 200px;
     vertical-align: top;
     background:  transparent;
 
@@ -103,5 +105,5 @@ aside{
 }
 
 .numero{
-    font-size: 500px;
+    font-size: 10px;
 }
